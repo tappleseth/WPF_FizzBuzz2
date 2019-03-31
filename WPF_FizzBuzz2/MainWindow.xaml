@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="{Binding Path=Test}" HorizontalAlignment="Left" Margin="36,34,0,0" VerticalAlignment="Top" Height="42" Width="731"/>
+        <Label Content="{Binding Path=InputName}" HorizontalAlignment="Left" Height="50" Margin="36,94,0,0" VerticalAlignment="Top" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="203,94,0,0" TextWrapping="Wrap" Text="{Binding Path=InText}" VerticalAlignment="Top" Width="457"/>
+        <Label Content="{Binding Path=OutputName}" HorizontalAlignment="Left" Height="50" Margin="36,243,0,0" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.5,1.488"/>
+        <Button Command="{Binding Path=SendFizzBuzz}" Content="{Binding Path=CalcText}" HorizontalAlignment="Left" Height="63" Margin="36,161,0,0" VerticalAlignment="Top" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="203,243,0,0" TextWrapping="Wrap" Text="{Binding Path=OutText}" VerticalAlignment="Top" Width="457"/>
+
     </Grid>
 </Window>

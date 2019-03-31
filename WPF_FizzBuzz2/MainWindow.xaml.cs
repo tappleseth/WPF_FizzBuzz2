@@ -22,6 +22,8 @@ namespace WPF_FizzBuzz2
     {
         public MainWindow()
         {
+            var vm = new ViewModel(new Model_Alpha());
+            DataContext = vm;
             InitializeComponent();
         }
     }
